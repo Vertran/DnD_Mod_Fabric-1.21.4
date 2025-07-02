@@ -1,41 +1,41 @@
 {
-	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-		]
-	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.7",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "dungeonsndragonsish",
+  "version": "0.0.1-alpha",
+  "name": "DnD Mod",
+  "description": "A Dungeons and Dragons inspired mod for Minecraft",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/Vertran/DnD_Mod_Fabric-1.21.4.git"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/dungeonsndragonsish/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.chlorofromik.DnDMod"
+    ],
+    "client": [
+      "com.chlorofromik.DnDModClient"
+    ]
+  },
+  "mixins": [
+    "dungeonsndragonsish.mixins.json",
+    {
+      "config": "dungeonsndragonsish.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.7",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
